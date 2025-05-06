@@ -1,0 +1,8 @@
+x <- c(2,5,3,4,1)
+y <- c(4,8,3,7,1)
+n <- length(x)
+a=(n* sum(x*y) - sum(x)*sum(y)) / (n * sum(x^2) - sum(x)^2)
+b=(sum(x^2) * sum(y) - sum(x) * sum(x*y)) / (n * sum(x^2) - sum(x)^2)
+print(paste("a: ",a))
+print(paste("b: ",b))
+print(paste("y =", a, "x +", b))
